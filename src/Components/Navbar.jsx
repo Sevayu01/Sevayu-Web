@@ -6,10 +6,10 @@ const Navbar = () => {
   return (
     <div className='flex justify-between px-[2%] sm:px-[5%] mt-[2rem]'>
       <Link to="/">
-        <img src={sevayu} alt="logo" className='sm:w-[8rem] w-[5rem] ml-3'></img>
+        <img src={sevayu} alt="logo" className='w-[8rem] ml-3'></img>
       </Link>
         <nav className='hidden sm:block'>
-          <ul className='flex xl:gap-12 gap-5 transition-all ease-in-out'>
+          <ul className='flex xl:gap-12 gap-5 transition-all ease-in-out visby'>
             <p>About</p>
             <p>Terms</p>
             <p>Contact</p>
