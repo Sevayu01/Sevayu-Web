@@ -8,7 +8,6 @@ const SignupPage = () => {
 
   const [state, setState] = useState({
     step : 1,
-    userName : "",
     fullName : "",
     email : "",
     password : "",
@@ -17,7 +16,8 @@ const SignupPage = () => {
     state : "",
     country : "",
     postalCode : "",
-    sex : "",
+    contact : "",
+    street : "",
   })
 
   const next = () => setState(prev => ({...prev, step : prev.step + 1}))
@@ -41,7 +41,7 @@ const SignupPage = () => {
                   {state.step===1 && <SignupDetails next={next} back={back} handleChange={handleChange} state={state} />}
                   {state.step===2 && <PersonalDetails next={next} back={back} handleChange={handleChange} state={state} />}
                   {state.step===3 && <PhotoUpload next={next} back={back} handleChange={handleChange} state={state} />}
-
+                  
                 </div>
             </div>
         </center>
